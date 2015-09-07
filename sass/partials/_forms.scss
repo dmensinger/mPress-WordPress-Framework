@@ -1,0 +1,43 @@
+
+/* FORMS */
+
+.gform_wrapper{
+	background-color:#efefef;
+	padding:15px 25px;
+	}
+.gform_wrapper ul li{margin:0px; padding:0px}
+.gform_heading{}
+.gform_title{}
+.gform_description{}
+.gform_body{}
+.gform_fields{}  
+.gfield{}
+.gfield_label{}
+.gfield_checkbox{font-size:14px;}
+.gform_fields input{background-color:#fff; border: 1px solid #ccc;}
+.gform_fields textarea{background-color:#fff; border: 1px solid #ccc; max-width:97.5%;}
+.gform_fields select{background-color:#fff; border: 1px solid #ccc;}
+
+.gform_button {
+  display: block;
+  position: relative;
+  padding: 0px 10px;
+  margin: 0 auto;
+  border: 0;
+  background-color: $color-primary;
+  border-bottom: $color-primary-hover 3px solid;
+  color: #fff; 
+  cursor: pointer;
+  font-size: 14px;
+  width: 140px;
+  height: 32px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width:auto;
+  @include border-radius(4px);
+}
+.gform_button:hover { background-color: $color-primary-hover; border-bottom-color: $color-primary-hover; }
+.gform_button:active { top: 2px; border-bottom-width: 1px; }

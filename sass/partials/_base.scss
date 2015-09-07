@@ -1,0 +1,222 @@
+body{
+	font-family: $font-stack;
+	color:$font-color;
+    background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size:16px;
+	line-height: 24px;
+}
+
+iframe, object, embed {max-width: 100%;}
+
+a{text-decoration:none; color: $anchor;}
+a:hover{color:$hover;}
+
+a img{
+	border:0px;
+    @include opacity(1.0);
+ } 
+a:hover img{
+    @include opacity(0.8);
+}
+
+img.expand{    
+	-webkit-transform: scale(0.95,0.95);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 150ms;
+    -moz-transform: scale(0.95,0.95);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 150ms;
+    transform: scale(0.95,0.95);
+    transition-timing-function: ease-out;
+    transition-duration: 150ms;
+}
+img.expand:hover{   
+	-webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 150ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 150ms;
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 150ms;
+    position: relative;
+    z-index: 99;
+    @include opacity(1.0);
+}
+img.main{ background-color:#efefef; max-width:96%; padding:2%; height:auto;}
+#content img.main{ background-color:#efefef; max-width:96%; padding:2%; height:auto;}
+
+h1,h2,h3,h4,h5{margin:0px 0px 15px 0px; padding:0px;}
+
+h1{font-size:32px; line-height:42px;}
+h2{font-size:28px; line-height:38px;}
+h3{font-size:24px; line-height:34px;}
+h4{font-size:20px; line-height:30px;}
+h5{font-size:18px; line-height:28px;}
+
+h1.pagetitle{color:$color-primary;}
+
+p{margin: 0px 0px 15px 0px;}
+
+hr{
+  	border:0;
+  	border-top: 1px solid #ccc;
+  	height: 0;
+  	background: #ccc;
+  	margin:20px 0px;
+}
+
+.wrapper{
+	width: $container;
+	margin:0px auto;
+	padding:0px 0px;
+}
+	
+#header-mobile{display:none;}
+
+#header{
+	margin:0px auto;
+	width:100%;
+	height: auto;
+	min-width: $container;
+	display:block;
+	& .logo{}
+	& .phone{}
+	& .tagline{}
+}
+
+#page{
+	width:100%;
+	min-width: $container;
+	margin:0px auto;
+	padding: 40px 0px;
+	overflow: hidden;
+	background-color:#fff;
+}
+
+#content{width: auto;}
+#content img{max-width:100%; height:auto;}	
+	
+#footer{
+	width:100%;
+	min-width: $container;
+	margin:0px auto;
+	display:block;
+	padding:40px 0px;
+	text-align:center;
+}
+
+.entry {
+	margin:0px;
+    padding:0px;
+
+	& ul{
+		margin: 0px;
+		padding: 0px 0px 25px 25px;
+		overflow:hidden;
+	}
+	& ul li{
+		list-style-image:url(images/bullet.png);
+		margin: 0px 0px 4px 0px;
+		padding: 0px;
+		text-align:left;
+	}
+	
+	& blockquote {
+		font-size:32px;
+		line-height:42px;
+		padding:0px 0px 0px 20px;
+		margin:30px 0px;
+		color:$color-secondary;
+		font-weight: 300;
+		font-style:italic;
+	}
+
+	& table {
+		border-width:0 1px 1px 0;
+		border-style:solid;
+		border-color:#ccc;
+		font-size:0.9em;
+	}
+	& table tr td {
+		padding:5px 10px;
+		border-width:1px 0 0 1px;
+		border-style:solid;
+		border-color:#ccc;
+
+	}
+	& table tr th {
+		border-width:1px 0 0 1px;
+		border-style:solid;
+		border-color:#ccc;
+		padding:5px 10px;
+		background:#f4f4f4;
+		color:#666;
+		font-weight:bold;
+		text-transform:uppercase;
+		text-align:center;
+	}
+}
+
+/* SOCIAL LINKS */
+
+#smedia{
+	overflow:hidden;
+	margin:20px 0px 0px 0px;
+	padding:0px;
+	position: relative;
+	display:block;
+		
+	& a{
+	display:inline-block;
+	width:32px;
+	height:32px;
+	margin:0px 5px;
+	background-position:top center;
+	background-repeat:no-repeat;
+	}
+	& a:hover{
+		background-position:bottom center;
+	}
+	& a.fb{
+		background-image:url("images/fb.png");
+	}
+	& a.tw{
+		background-image:url("images/tw.png");
+	}
+	& a.gp{
+		background-image:url("images/gp.png");
+	}
+	& a.in{
+		background-image:url("images/in.png");
+	}
+	& a.yt{
+		background-image:url("images/yt.png");
+	}
+
+}
+
+.addthis_toolbox{margin-top:25px;}
+
+/* SEARCHBAR */
+#searchbar{
+	margin:0px;
+    background-color:transparent;
+	width:180px;
+	position:relative;
+	top:240px;
+	right:78px;
+}
+#searchbar a img{
+	margin:0px 0px 10px 0px;
+}
+#searchform{
+	background-color:transparent;
+	border: 0px;
+	color:#ccc;
+	width:180px;
+	padding:6px;
+}

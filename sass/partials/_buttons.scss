@@ -1,0 +1,60 @@
+
+/* BUTTONS */
+
+#button{    
+	-webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 150ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 150ms;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: $font-stack;
+	font-weight:700;
+	
+	&:hover{   
+		-webkit-transform: scale(1.05,1.05);
+	    -webkit-transition-timing-function: ease-out;
+	    -webkit-transition-duration: 150ms;
+	    -moz-transform: scale(1.05,1.05);
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 150ms;
+	    position: relative;
+	    z-index: 99;
+	}
+
+	&.large{
+		max-width:200px; 
+		padding:12px;
+	}
+	&.small{
+		max-width:140px; 
+		padding:8px 10px;
+	}
+
+	&.primary a{
+		color:#fff; 
+		font-size:18px;
+	}
+	&.primary {
+		background-color:$color-primary; 
+		@include border-radius(4px);
+	}
+	&.primary:hover{
+		background-color:$color-primary-hover;
+	}
+
+	&.secondary a{
+		color:#fff; 
+		font-size:18px;
+	}
+	&.secondary {
+		background-color:$color-secondary; 
+		@include border-radius(4px);
+	}
+	&.secondary:hover{
+		background-color:$color-secondary-hover;
+	}
+
+}

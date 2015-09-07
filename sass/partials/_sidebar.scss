@@ -1,0 +1,36 @@
+
+/* SIDEBAR */
+
+#sidebar {
+	width: 100%;
+	padding:0px 0px;
+	margin:0px;
+}
+#sidebar .widget, .sidebar.widget{margin-bottom:25px; display:block; padding:20px; border:1px solid #efefef; background-color:#fafafa;}
+
+#sidebar ul li, .sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+}
+	
+#sidebar ul, #sidebar ul ol, .sidebar.widget ul {margin: 0px; padding: 0px;}
+#sidebar ul ul, #sidebar ul ol, .sidebar ul ul {margin: 0px;}
+#sidebar ul ul ul, #sidebar ul ol, .sidebar ul ul ul {margin: 0 0 0 20px;}
+#sidebar ul ul li, #sidebar ul ol li, .sidebar ul ul li {margin: 0px;padding: 0px;}
+	
+#sidebar ul li a, .sidebar ul li a{
+	margin:6px 0px 0px 0px;
+	padding:5px 0px 0px 0px;
+	display:block;
+	border-top:1px solid #efefef;
+}
+#sidebar ul li a:hover, .sidebar ul li a:hover{}
+#sidebar ul ul li a, .sidebar ul ul li a{
+	margin:5px 0px 0px 0px;
+	padding:5px 0px 0px 10px;
+	display:block;
+	color:#333;
+	font-size:12px;
+	line-height:16px;
+}
+#sidebar ul li.current_page_item a, #sidebar ul li.widget_subpages_current_page a, .sidebar ul li.widget_subpages_current_page a{font-weight:700;} 

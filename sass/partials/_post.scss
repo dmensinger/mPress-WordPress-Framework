@@ -1,0 +1,101 @@
+
+/* POST / COMMENTS */
+
+.metadate{}
+.metaauthor {
+	font-size:13px;
+	color:#666;
+	background-color:#e7e7e7;
+	padding:2px 10px;
+	display:block;
+	text-transform:uppercase;
+}
+.metaauthor a{color:#333;}
+.metaauthor a:hover{color: #000;}
+	
+.alignright {
+	padding:0;
+	margin: 0px 0px 5px 15px;
+	display: inline;
+	float:right;
+	}
+
+.alignleft {
+	padding:0;
+	margin: 0px 15px 5px 0;
+	display: inline;
+	float:left;
+	}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navigation{
+	margin:20px 0px 0px 0px;
+	display:block;
+	padding:0px;
+	overflow:hidden;
+	color:#333;
+	}
+#navigation a{padding:5px; display:block;}
+#navigation a:hover{}
+#navigation .left{float:left;}
+#navigation .right{float:right;}
+
+
+/* COMMENTS*/
+
+.commentlist {
+	margin:0px;
+	padding:0px;
+	border-bottom: 1px dashed #ccc;
+}
+.commentlist li {
+	list-style:none;
+	margin:25px 0px;
+	padding:25px 0px 0px 0px;
+	border-top: 1px dashed #ccc;
+}
+.commentlist li.even {}
+.commentlist li.odd {}
+.commentlist li li{border-top:0px; padding: 0px 0px 25px 25px; border-left:2px solid #efefef;}
+
+.comment-author img{
+	float:left;
+	border: 1px solid #555;
+	padding:2px;
+	margin: 2px 8px 0px 0px;
+	}
+.commentlist cite.fn{font-style:normal; font-weight:bold;}
+.commentlist .comment-meta{font-size:12px; margin-bottom:15px;}
+
+ul.children li {
+	list-style:none;
+}
+
+.commentarea{
+	width:90%;
+	border:1px solid #ccc;
+	margin:0px 0px 10px 0px;
+	padding:5px;
+	color:#555;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	background: url("images/diagonal.gif") repeat;
+    @include border-radius(4px);
+	}
+.commentinput{
+	width:300px;
+	font-size:14px;
+	border:1px solid #ccc;
+	margin:0px 0px 10px 0px;
+	padding:5px;
+	color:#555;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	background: url("images/diagonal.gif") repeat;
+    @include border-radius(4px);
+	}

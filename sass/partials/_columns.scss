@@ -1,0 +1,73 @@
+
+/* COLUMNS */
+
+.full_width, .one_half, .one_third, .two_third, .one_fourth, .three_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth {float: left; clear:right;}
+
+.full_width  {width: 100%;}
+.one_half  {width: 48%; margin:0 1%;}
+.one_third  {width: 31.3%; margin:0 1%;}
+.two_third  {width: 64.6%; margin:0 1%;}
+.one_fourth  {width: 23%; margin:0 1%;}
+.three_fourth  {width: 73%; margin:0 1%;}
+.one_fifth  {width: 18%; margin:0 1%;}
+.two_fifth  {width: 38%; margin:0 1%;}
+.three_fifth  {width: 58%; margin:0 1%;}
+.four_fifth  {width: 78%; margin:0 1%;}
+.one_sixth  {width: 14.6%; margin:0 1%;}
+
+
+.clear_column {
+	clear:both;
+	display:block;
+	font-size:0; height:0;
+	line-height:0; width:100%;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+
+.full_width_md{width: 100%;}
+.one_half_md{width: 48%; margin:0 1%;}
+.one_third_md  {width: 31.3%; margin:0 1%;}
+
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.full_width_sm {width: 100%;}
+.one_half_sm{width: 48%; margin:0 1%;}
+.one_third_sm  {width: 31.3%; margin:0 1%;}
+
+}
+
+/* SALVATORRE GRID */
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of2 { width: 48%; margin:1%;}
+.size-1of3 { width: 31.3%; margin:1%;}
+.size-1of4 { width: 23%; margin:1%;}
+
+#section #grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+		}
+
+@media screen and (max-width: 480px) {
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+}		
+@media screen and (max-width: 768px) {
+	#grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+	
+	#section #grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+		}
+}
+@media screen and (min-width: 769px) {
+	#grid[data-columns]::before {
+		content: '3 .column.size-1of3';
+	}
+}

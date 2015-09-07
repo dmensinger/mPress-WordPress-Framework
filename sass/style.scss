@@ -1,0 +1,108 @@
+/*   
+Theme Name: Blank
+Theme URI: 
+Description: Theme for 
+Author: Dan Mensinger
+Author URI: http://www.mpresscreative.com
+Version: 1.0
+.
+Copyright mPress Creative 2015
+.
+*/
+
+$font-stack: Arial, Sans-Serif;
+$font-stack-secondary: Times, Serif;
+$font-color: #333;
+
+$container: 1080px;
+
+$color-primary: #000;
+$color-primary-hover: #111;
+
+$color-secondary: #111;
+$color-secondary-hover: #222;
+
+$color-tertiary: #222;
+$color-tertiary-hover: #333;
+
+$anchor: #1571d6;
+$hover: #003399;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin box-shadow($box-shadow) {
+  -moz-box-shadow: $box-shadow;
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+@import 'partials/base';
+@import 'partials/columns';
+@import 'partials/sections';
+@import 'partials/buttons';
+@import 'partials/nav';
+@import 'partials/query';
+@import 'partials/gallery';
+@import 'partials/sidebar';
+@import 'partials/slider';
+@import 'partials/forms';
+@import 'partials/post';
+
+
+/* Print Styles */
+@media print {
+	body { background:white; color:black; margin:0; }
+	#header { display:none; }
+
+	#page{border:0px; padding:0px; margin:0px; width:auto;}
+	#content {margin-left:0; float:none; width:auto; border:0px; font-size:10pt;}
+
+	#comments { display:block; background:white; color:black; }
+	#comments .avatar{display:none}
+	#comments .reply{display:none;}
+	#comments .comment-edit-link{display:none;}
+
+	#sidebar { display:none; }
+	#footer { display:none; }
+	#respond {display:none;}
+	#navigation{display:none;}
+}
+
+@import 'partials/mobile';

@@ -1,0 +1,30 @@
+
+/* GALLERIES */
+
+.gallery{}
+.gallery a img{
+  margin: 5%;
+  @include opacity(1.0);
+   transition: opacity .20s ease-in-out;
+  -moz-transition: opacity .20s ease-in-out;
+  -webkit-transition: opacity .20s ease-in-out;
+}
+.gallery a:hover img{@include opacity(0.8);}
+.gallery-item{text-align:left!important;}	
+
+.gallery-item {
+  float: left;
+  width: 23%;
+   margin: 10px 1%;
+}
+.gallery-item img {
+  width: 90%;
+  height: auto;
+} 
+
+.wp-caption {
+	max-width: 96% !important;
+	width: auto !important;
+	text-align: center;
+	font-style: italic;
+}
