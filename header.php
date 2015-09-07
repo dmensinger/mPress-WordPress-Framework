@@ -51,7 +51,6 @@ jQuery(document).ready(function($) {
             <a class="yt" href="#" target="_blank"></a>
             <a class="in" href="#" target="_blank"></a>
         </div>
-        <div class="phone"></div>
         
         <div id="nav">
             <ul>
