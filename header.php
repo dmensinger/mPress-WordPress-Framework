@@ -43,14 +43,6 @@ jQuery(document).ready(function($) {
 
 <div id="header">
 	<div class="wrapper">
-                        
-        <div id="smedia">
-            <a class="fb" href="#" target="_blank"></a>
-            <a class="tw" href="#" target="_blank"></a>
-            <a class="gp" href="#" target="_blank"></a>
-            <a class="yt" href="#" target="_blank"></a>
-            <a class="in" href="#" target="_blank"></a>
-        </div>
         
         <div id="nav">
             <ul>
