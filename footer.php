@@ -1,4 +1,5 @@
 <div id="footer">
+    <div class="wrapper">
         
     <div id="nav-footer"><?php wp_nav_menu('menu=Main Menu'); ?></div>
 
@@ -11,7 +12,8 @@
         <a class="yt" href="#" target="_blank"></a>
         <a class="in" href="#" target="_blank"></a>
     </div>
-
+    
+    </div>
 </div>
 	
 </body>
