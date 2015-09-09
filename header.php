@@ -44,11 +44,7 @@ jQuery(document).ready(function($) {
 <div id="header">
 	<div class="wrapper">
         
-        <div id="nav">
-            <ul>
-                <li><?php wp_nav_menu('menu=Main Menu'); ?></li>
-            </ul>
-        </div>
+        <div id="nav"><?php wp_nav_menu('menu=Main Menu'); ?></div>
 
 	</div>
 </div>

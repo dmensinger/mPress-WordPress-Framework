@@ -259,6 +259,10 @@ hr {
   background-image: url("images/yt.png");
 }
 
+.addthis_toolbox {
+  margin-top: 25px;
+}
+
 /* SEARCHBAR */
 #searchbar {
   margin: 0px;
@@ -443,7 +447,6 @@ hr {
 }
 #section .wrapper {
   padding: 40px 0px;
-  overflow: hidden;
 }
 #section.lightgray {
   background-color: #efefef;
@@ -564,8 +567,29 @@ hr {
   padding: 0px;
   margin: 0px 30px;
   line-height: 25px;
-  float: left;
-  color: #333;
+}
+
+#nav-footer {
+  margin: 0px auto 25px auto;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+}
+#nav-footer ul {
+  display: inline;
+  margin: 0px;
+  padding: 0;
+}
+#nav-footer ul li {
+  padding: 0px;
+  display: inline;
+}
+#nav-footer ul li a {
+  padding: 0px;
+  margin: 0px 30px 0px 0px;
+  display: inline;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 /* QUERY */
@@ -616,7 +640,7 @@ hr {
 
 /* GALLERIES */
 .gallery a img {
-  margin: 0px 10px 12px 0px;
+  margin: 5%;
   opacity: 1;
   filter: alpha(opacity=100);
   transition: opacity .20s ease-in-out;
@@ -642,7 +666,6 @@ hr {
 .gallery-item img {
   width: 90%;
   height: auto;
-  margin: 5%;
 }
 
 .wp-caption {
@@ -658,55 +681,43 @@ hr {
   padding: 0px 0px;
   margin: 0px;
 }
-
-#sidebar .widget, .sidebar.widget {
+#sidebar .widget, #sidebar .sidebar.widget {
   margin-bottom: 25px;
   display: block;
-  padding: 20px;
-  border: 1px solid #efefef;
-  background-color: #fafafa;
 }
-
-#sidebar ul li, .sidebar ul li {
+#sidebar ul li, #sidebar ul li {
   list-style-type: none;
   list-style-image: none;
 }
-
-#sidebar ul, #sidebar ul ol, .sidebar.widget ul {
+#sidebar ul, #sidebar ul ol, #sidebar ul {
   margin: 0px;
   padding: 0px;
 }
-
-#sidebar ul ul, #sidebar ul ol, .sidebar ul ul {
+#sidebar ul ul, #sidebar ul ol, #sidebar ul ul {
   margin: 0px;
 }
-
-#sidebar ul ul ul, #sidebar ul ol, .sidebar ul ul ul {
+#sidebar ul ul ul, #sidebar ul ol, #sidebar ul ul ul {
   margin: 0 0 0 20px;
 }
-
-#sidebar ul ul li, #sidebar ul ol li, .sidebar ul ul li {
+#sidebar ul ul li, #sidebar ul ol li, #sidebar ul ul li {
   margin: 0px;
   padding: 0px;
 }
-
-#sidebar ul li a, .sidebar ul li a {
+#sidebar ul li a, #sidebar ul li a {
   margin: 6px 0px 0px 0px;
   padding: 5px 0px 0px 0px;
   display: block;
   border-top: 1px solid #efefef;
 }
-
-#sidebar ul ul li a, .sidebar ul ul li a {
+#sidebar ul ul li a, #sidebar ul ul li a {
   margin: 5px 0px 0px 0px;
   padding: 5px 0px 0px 10px;
   display: block;
-  color: #333;
+  color: #444;
   font-size: 12px;
   line-height: 16px;
 }
-
-#sidebar ul li.current_page_item a, #sidebar ul li.widget_subpages_current_page a, .sidebar ul li.widget_subpages_current_page a {
+#sidebar ul li.current_page_item a, #sidebar ul li.widget_subpages_current_page a, #sidebar .sidebar ul li.widget_subpages_current_page a {
   font-weight: 700;
 }
 
@@ -742,6 +753,9 @@ hr {
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
+#slides .light h1 {
+  color: #333333;
+}
 #slides p {
   font-size: 22px;
   line-height: 28px;
@@ -752,6 +766,9 @@ hr {
 #slides .dark p {
   color: #ccc;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+#slides .light p {
+  color: #333333;
 }
 #slides .first {
   display: block;
@@ -1165,18 +1182,9 @@ ul.children li {
     min-width: 100%;
   }
 
-  #header .phone {
-    display: none;
-  }
-
-  #header .tagline {
-    display: none;
-  }
-
   #page {
     min-width: 100%;
   }
-
   #page .wrapper {
     padding: 0px 20px;
   }
@@ -1184,7 +1192,6 @@ ul.children li {
   #section {
     min-width: 100%;
   }
-
   #section .wrapper {
     padding: 30px 20px;
   }
@@ -1201,49 +1208,30 @@ ul.children li {
     background-color: #ccc;
     margin: 0px;
   }
-
+  #header-mobile a {
+    display: block;
+    float: left;
+    height: 60px;
+  }
   #header-mobile .home a {
-    display: block;
     width: 25%;
     border-right: 1px solid #666;
-    height: 60px;
-    float: left;
-    background-image: url("images/icon-home.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("images/icon-home.png") no-repeat center center;
   }
-
   #header-mobile .nav a {
-    display: block;
     width: 25%;
     border-right: 1px solid #666;
-    height: 60px;
-    float: left;
-    background-image: url("images/icon-nav.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("images/icon-nav.png") no-repeat center center;
   }
-
   #header-mobile .phone a {
-    display: block;
     width: 25%;
     border-right: 1px solid #666;
-    height: 60px;
-    float: left;
-    background-image: url("images/icon-phone.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("images/icon-phone.png") no-repeat center center;
   }
-
   #header-mobile .email a {
-    display: block;
     width: 23%;
     border-right: 0px;
-    height: 60px;
-    float: left;
-    background-image: url("images/icon-email.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("images/icon-email.png") no-repeat center center;
   }
 
   #nav {
@@ -1254,19 +1242,16 @@ ul.children li {
     display: block;
     background-color: #aaa;
   }
-
   #nav-mobile ul {
     margin: 0px;
     padding: 0px;
   }
-
   #nav-mobile ul li {
     clear: both;
     list-style: none;
     margin: 0px;
     padding: 0px;
   }
-
   #nav-mobile ul li a {
     display: block;
     background-color: #333;
@@ -1276,18 +1261,15 @@ ul.children li {
     margin: 0px;
     padding: 2% 3%;
   }
-
   #nav-mobile ul li a:hover {
     background-color: #222;
     color: #fff;
   }
-
   #nav-mobile ul ul {
     font-size: small;
     margin: 0px;
     padding: 0px;
   }
-
   #nav-mobile ul ul li {
     margin: 0px;
     padding: 0px;
@@ -1313,17 +1295,14 @@ ul.children li {
     text-align: justify;
     padding-left: 0px;
   }
-
   #query .title {
     text-align: center;
   }
-
   #query .thumb {
     float: none;
     margin: 0px auto 5px auto;
     width: 150px;
   }
-
   #query .more a {
     display: none;
   }

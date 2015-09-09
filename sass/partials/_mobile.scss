@@ -1,19 +1,35 @@
 @media only screen and (max-width: 1080px), only screen and (max-device-width: 1080px) {
 
-.wrapper{width:auto;}
-img{max-width:100%; height:auto;}
+.wrapper{
+	width:auto;
+}
 
-#header{min-width:100%;}
-#header .phone{display:none;}
-#header .tagline{display:none;}
+img{
+	max-width:100%; 
+	height:auto;
+}
 
-#page{min-width:100%;}
-#page .wrapper{padding:0px 20px;}
+#header{
+	min-width:100%;
+}
 
-#section{min-width:100%;}
-#section .wrapper{padding:30px 20px;}
+#page{
+	min-width:100%;
+	& .wrapper{
+		padding:0px 20px;
+	}
+}
 
-#footer{min-width:100%;}
+#section{
+	min-width:100%;
+	& .wrapper{
+		padding:30px 20px;
+	}
+}
+
+#footer{
+	min-width:100%;
+}
 
 }
 
@@ -23,27 +39,55 @@ img{max-width:100%; height:auto;}
 
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
 
-#header-mobile{display:block; width:100%; height:60px; background-color:#ccc; margin:0px;}
-#header-mobile .home a{display:block; width:25%; border-right:1px solid #666; height:60px; float:left; 
-background-image:url("images/icon-home.png"); background-position: center; background-repeat:no-repeat;}
-#header-mobile .nav a{display:block; width:25%; border-right:1px solid #666; height:60px;  float:left; 
-background-image:url("images/icon-nav.png"); background-position: center; background-repeat:no-repeat;}
-#header-mobile .phone a{display:block; width:25%; border-right:1px solid #666; height:60px;  float:left; 
-background-image:url("images/icon-phone.png"); background-position: center; background-repeat:no-repeat;}
-#header-mobile .email a{display:block; width:23%; border-right:0px; height:60px; float:left; 
-background-image:url("images/icon-email.png"); background-position: center; background-repeat:no-repeat;}
+#header-mobile{
+	display:block; 
+	width:100%; 
+	height:60px; 
+	background-color:#ccc; 
+	margin:0px;
+	& a {
+		display:block;
+		float:left;
+		height:60px;
+	}
+	& .home a{ 
+		width:25%; 
+		border-right:1px solid #666;   
+		background:url("images/icon-home.png") no-repeat center center; 
+	}
+	& .nav a{
+		width:25%; 
+		border-right:1px solid #666;   
+		background:url("images/icon-nav.png") no-repeat center center; 
+	}
+	& .phone a{
+		width:25%; 
+		border-right:1px solid #666;   
+		background:url("images/icon-phone.png") no-repeat center center; 
+	}
+	& .email a{
+		width:23%; 
+		border-right:0px;   
+		background:url("images/icon-email.png") no-repeat center center; 
+	}
+}
 
 #nav{display:none;}
 
-#nav-mobile {display:block; background-color:#aaa;}
-#nav-mobile ul{margin:0px; padding:0px;}
-#nav-mobile ul li {
+#nav-mobile {
+	display:block; 
+	background-color:#aaa;
+	& ul{
+		margin:0px; 
+		padding:0px;
+	}
+	& ul li {
 	clear:both;
 	list-style:none;
 	margin:0px;
 	padding:0px;
-}
-#nav-mobile ul li a {
+	}
+	& ul li a {
 	display:block;
 	background-color:#333;
 	text-transform:uppercase;
@@ -51,10 +95,21 @@ background-image:url("images/icon-email.png"); background-position: center; back
 	border-top:1px solid #555;
 	margin:0px;
 	padding:2% 3%;
+	}
+	& ul li a:hover{
+		background-color:#222; 
+		color:#fff;
+	}
+	& ul ul {
+		font-size:small;
+		margin:0px;
+		padding:0px;
+	}
+	& ul ul li {
+		margin:0px;
+		padding:0px;
+	}
 }
-#nav-mobile ul li a:hover{background-color:#222; color:#fff;}
-#nav-mobile ul ul {font-size:small;margin:0px;padding:0px;}
-#nav-mobile ul ul li {margin:0px;padding:0px;}
 
 #content{width:100%; float:none; padding:0px 0px;}
 #sidebar{width:100%; float:none; padding:0px 0px; margin:0px;}
@@ -68,10 +123,25 @@ background-image:url("images/icon-email.png"); background-position: center; back
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 
-#query .text{width:auto; float:none; text-align:justify; padding-left:0px;}
-#query .title{text-align:center;}
-#query .thumb{float:none; margin: 0px auto 5px auto; width:150px;}
-#query .more a{display:none;}
+#query{
+	& .text{
+		width:auto; 
+		float:none; 
+		text-align:justify; 
+		padding-left:0px;
+	}
+	& .title{
+		text-align:center;
+	}
+	& .thumb{
+		float:none; 
+		margin: 0px auto 5px auto; 
+		width:150px;
+	}
+	& .more a{
+		display:none;
+	}
+}
 
 .alignright{float:none; margin:0px 0px 20px 0px; display:block;}
 .alignleft{float:none; margin:0px 0px 20px 0px; display:block;}
@@ -89,7 +159,6 @@ background-image:url("images/icon-email.png"); background-position: center; back
 }
 
 }
-
 
 @media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
 

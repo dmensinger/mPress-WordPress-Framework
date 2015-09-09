@@ -19,7 +19,6 @@ wp_register_script('salvattore', get_bloginfo('template_url').'/js/salvattore.mi
 // Include custom stylesheets
 wp_register_style('superslides', get_bloginfo('template_url').'/js/superslides/dist/stylesheets/superslides.css', '1.0', '', false );
 
-
  if ( is_front_page() ) {
 	wp_enqueue_script('superslides');
 	wp_enqueue_style('superslides');
@@ -30,8 +29,6 @@ wp_enqueue_script('salvattore');
 
 }
 add_action('wp_enqueue_scripts', 'load_my_scripts');
-
-
 
 // Create Sidebars
 if (function_exists('register_sidebar'))
@@ -70,7 +67,8 @@ if (function_exists('add_theme_support')) {
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-		  'main_nav' => 'Main Menu'
+		  'main_nav' => 'Main Menu',
+		  'footer_nav' => 'Footer Menu'
 		)
 	);
 }

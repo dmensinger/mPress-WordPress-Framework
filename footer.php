@@ -1,7 +1,7 @@
 <div id="footer">
     <div class="wrapper">
         
-    <div id="nav-footer"><?php wp_nav_menu('menu=Main Menu'); ?></div>
+    <div id="nav-footer"><?php wp_nav_menu('menu=Footer Menu'); ?></div>
 
     Copyright &copy; <?php echo date("Y"); ?> Your Business. All Rights Reserved<br /><br />
                    
