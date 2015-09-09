@@ -2,7 +2,9 @@
 
 .wrapper{
 	width:auto;
-}
+	/* Force small margins on smaller devices. Breathing room! */
+	margin-left:15px!important; 
+	margin-right:15px!important;
 
 img{
 	max-width:100%; 
@@ -11,6 +13,10 @@ img{
 
 #header{
 	min-width:100%;
+}
+
+#nav{
+	min-width: 100%;
 }
 
 #page{
