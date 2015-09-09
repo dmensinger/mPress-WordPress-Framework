@@ -64,6 +64,6 @@ Template Name: Blog
         </div>
 
 	</div>
-</div><!-- page -->
+</div>
 
 <?php get_footer(); ?>

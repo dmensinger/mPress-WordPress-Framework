@@ -30,6 +30,6 @@ Template Name: Home
         </div>
     
     </div>
-</div><!-- page -->
+</div>
 
 <?php get_footer(); ?>
