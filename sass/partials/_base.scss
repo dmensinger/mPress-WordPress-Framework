@@ -16,7 +16,10 @@ a:hover{color:$hover;}
 a img{
 	border:0px;
     @include opacity(1.0);
- } 
+    transition: opacity .20s ease-in-out;
+    -moz-transition: opacity .20s ease-in-out;
+    -webkit-transition: opacity .20s ease-in-out;
+ }  
 a:hover img{
     @include opacity(0.8);
 }
@@ -128,8 +131,8 @@ hr{
 	& blockquote {
 		font-size:32px;
 		line-height:42px;
-		padding:0px 0px 0px 20px;
-		margin:30px 0px;
+		padding:0px;
+		margin:20px 0px 30px 0px;
 		color:$color-secondary;
 		font-weight: 300;
 		font-style:italic;
