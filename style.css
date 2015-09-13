@@ -198,10 +198,10 @@ hr {
   padding-bottom: 0px;
 }
 .entry blockquote {
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 36px;
   padding: 0px;
-  margin: 20px 0px 30px 0px;
+  margin: 20px 0px;
   color: #111111;
   font-weight: 300;
   font-style: italic;
