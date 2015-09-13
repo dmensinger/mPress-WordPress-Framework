@@ -126,6 +126,9 @@ img{
 
 @media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
 
+.alignright{float:none; margin:0px 0px 20px 0px; display:block;}
+.alignleft{float:none; margin:0px 0px 20px 0px; display:block;}
+
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
@@ -149,9 +152,6 @@ img{
 		display:none;
 	}
 }
-
-.alignright{float:none; margin:0px 0px 20px 0px; display:block;}
-.alignleft{float:none; margin:0px 0px 20px 0px; display:block;}
 
 .gallery-item {
     float: left;

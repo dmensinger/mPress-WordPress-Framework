@@ -6,8 +6,6 @@
 #nav {
 	margin: 0px auto;
 	padding:0px;
-    height: 25px;
-	width: $container;
 	text-align: center;
 	
 	& ul {
@@ -26,7 +24,6 @@
 	    display: inline;
 	    padding: 0px;
 	    margin:0px 30px;
-	    line-height: 25px;
 	}
 	
 	& ul li a:hover {}
