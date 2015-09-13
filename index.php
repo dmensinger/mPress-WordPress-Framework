@@ -3,7 +3,7 @@
 <div id="page">
 	<div class="wrapper">
     
-        <div class="two_third">
+        <div class="two_third full_width_md">
             <div id="content">
     
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -17,7 +17,7 @@
             </div>
         </div>
 	
-        <div class="one_third last_column">
+        <div class="one_third full_width_md">
             <?php get_sidebar(); ?>
         </div>
     
