@@ -189,7 +189,6 @@ hr {
   overflow: hidden;
 }
 .entry ul li {
-  list-style-image: url(images/bullet.png);
   margin: 0px 0px 4px 0px;
   padding: 0px;
   text-align: left;
@@ -575,7 +574,7 @@ hr {
 #nav-footer {
   margin: 0px auto 25px auto;
   padding: 0px 0px 0px 0px;
-  text-align: left;
+  text-align: center;
 }
 #nav-footer ul {
   display: inline;
