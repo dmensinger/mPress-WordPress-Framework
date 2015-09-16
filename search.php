@@ -19,11 +19,8 @@
                             else { echo '<img src="'.get_bloginfo('template_url').'/images/thumb.jpg">'; } ?></a>
                         </div>
                         <div class="text">
-                            <div class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
-                                <div class="metadate">
-                                    Posted on <?php the_time(get_option('date_format')) ?> in  <?php the_category(', ') ?>
-                                </div>	
-                                <?php the_excerpt(); ?>
+                            <div class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>	
+                            <?php the_excerpt(); ?>
                             <div class="more"><a href="<?php the_permalink() ?>">Read More</a></div>
                         </div>
                     </div>
