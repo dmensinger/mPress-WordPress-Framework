@@ -1,57 +1,48 @@
 
 /* BUTTONS */
 
-#button{    
-	-webkit-transform: scale(1,1);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 150ms;
-    -moz-transform: scale(1,1);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 150ms;
+a.button{    
 	text-align:center;
 	text-transform:uppercase;
 	font-family: $font-stack;
-	font-weight:700;
+	font-weight:600;
+	display:inline-block;
+    transition:all 0.3s ease;
+    @include border-radius(2px);
 	
 	&:hover{   
-		-webkit-transform: scale(1.05,1.05);
-	    -webkit-transition-timing-function: ease-out;
-	    -webkit-transition-duration: 150ms;
-	    -moz-transform: scale(1.05,1.05);
-	    -moz-transition-timing-function: ease-out;
-	    -moz-transition-duration: 150ms;
-	    position: relative;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
 	    z-index: 99;
 	}
 
 	&.large{
-		max-width:200px; 
-		padding:12px;
+		max-width:180px; 
+		padding:10px 14px 8px 14px;
 	}
 	&.small{
-		max-width:140px; 
-		padding:8px 10px;
+		max-width:120px; 
+		padding:8px;
 	}
 
-	&.primary a{
+	&.primary{
 		color:#fff; 
-		font-size:18px;
+		font-size:16px;
 	}
 	&.primary {
 		background-color:$color-primary; 
-		@include border-radius(4px);
 	}
 	&.primary:hover{
 		background-color:$color-primary-hover;
 	}
 
-	&.secondary a{
+	&.secondary{
 		color:#fff; 
-		font-size:18px;
+		font-size:16px;
 	}
 	&.secondary {
 		background-color:$color-secondary; 
-		@include border-radius(4px);
 	}
 	&.secondary:hover{
 		background-color:$color-secondary-hover;
